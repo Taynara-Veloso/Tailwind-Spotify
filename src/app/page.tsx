@@ -213,7 +213,7 @@ export default function Home() {
                 alt="Foto do album betterPlace"
                 className="w-full p-2"
               />
-              <strong className="flex font-semibold p-3">Daily Mix 1</strong>
+              <strong className="flex font-semibold p-3">Daily Mix 2</strong>
               <span className="flex text-sm text-zinc-400 p-3">Playlist • YouTube Music</span>
               <button 
                 type='button' 
@@ -232,7 +232,7 @@ export default function Home() {
                 alt="Foto do album betterPlace"
                 className="w-full p-2"
               />
-              <strong className="flex font-semibold p-3">Daily Mix 1</strong>
+              <strong className="flex font-semibold p-3">Daily Mix 3</strong>
               <span className="flex text-sm text-zinc-400 p-3">Playlist • YouTube Music</span>
               <button 
                 type='button' 
@@ -251,7 +251,7 @@ export default function Home() {
                 alt="Foto do album betterPlace"
                 className="w-full p-2"
               />
-              <strong className="flex font-semibold p-3">Daily Mix 1</strong>
+              <strong className="flex font-semibold p-3">Daily Mix 4</strong>
               <span className="flex text-sm text-zinc-400 p-3">Playlist • YouTube Music</span>
               <button 
                 type='button' 
@@ -270,7 +270,7 @@ export default function Home() {
                 alt="Foto do album betterPlace"
                 className="w-full p-2"
               />
-              <strong className="flex font-semibold p-3">Daily Mix 1</strong>
+              <strong className="flex font-semibold p-3">Daily Mix 5</strong>
               <span className="flex text-sm text-zinc-400 p-3">Playlist • YouTube Music</span>
               <button 
                 type='button' 
@@ -283,8 +283,22 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <footer className="bg-zinc-800 border-t border-zinc-700 p-6">
-        footer
+      <footer className="h-20 bg-zinc-800 border-t border-zinc-700 p-6 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <Image 
+            src="/yukika.jpg"
+            width={52}
+            height={52} 
+            alt="Foto do album Insomnia"
+            className="rounded-md"
+          />
+          <div className="flex flex-col">
+            <strong className="font-normal">Insomnia</strong>
+            <span className="text-xs text-zinc-400">유키카 • timeabout • 2021</span>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
       </footer>
     </div>
   );
