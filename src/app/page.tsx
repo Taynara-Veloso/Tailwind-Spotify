@@ -51,13 +51,15 @@ export default function Home() {
           </nav>
         </aside>
         <main className="flex-1 p-6 overflow-y-scroll">
-          <label className="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
-          <input type="search" id="search" className="relative block w-full p-4 ps-10 text-sm text-gray-100 border border-gray-900 rounded-lg bg-gray-950 placeholder-gray-300 text-white" placeholder="Search" required />
-          <button 
-            type="submit" 
-            className="absolute text-white end-11 top-8 bg-pink-700 hover:bg-pink-400 focus:ring-4 focus:outline-none focus:ring-pink-500 font-medium rounded-lg text-sm px-4 py-2">
-            Search
-          </button>
+          <div className="flex items-center relative h-16">
+            <label className="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+            <input type="search" id="search" className="absolute block w-full p-4 ps-10 text-sm text-gray-100 border border-gray-900 rounded-lg bg-gray-950 placeholder-gray-300 text-white" placeholder="Search" required />
+            <button 
+              type="submit" 
+              className="absolute end-3 top-3.2 text-white bg-pink-700 hover:bg-pink-400 focus:ring-4 focus:outline-none focus:ring-pink-500 font-medium rounded-lg text-sm px-4 py-2">
+              Search
+            </button>
+          </div>
           
           <div className="flex items-center justify-end gap-3 mt-8 pr-1">
             <button type='button' title='button' className="rounded-full bg-black/20 p-1">
@@ -70,15 +72,16 @@ export default function Home() {
           
           <h1 className="font-semibold text-3xl">Good Afternoon</h1>
           
-          <div className="grid grid-cols-3 gap-3 mt-4">
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/15 transition-colors">
+          <div className="grid grid-cols-3 gap-3 mt-4 h-52 overflow-hidden">
+            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 hover:bg-white/15 transition-colors">
               <Image 
                 src="/D.O.jpeg"
-                width={104}
-                height={104} 
+                width={130}
+                height={130} 
                 alt="Foto do album D.O"
+                
               />
-              <strong>BLOSSOM - Popcorn</strong>
+              <strong>BLOSSOM</strong>
             
               <button 
                 type='button' 
@@ -88,14 +91,17 @@ export default function Home() {
               </button>
             </a>
 
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/15 transition-colors">
+            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 hover:bg-white/15 transition-colors">
               <Image 
                 src="/AKMU.jpg"
-                width={104}
-                height={104} 
+                width={120}
+                height={120} 
                 alt="Foto do album AKMU"
               />
-              <strong>Love Lee - 후라이의 꿈</strong>
+              <strong>
+                LoveLee <br/>
+                후라이의꿈
+              </strong>
             
               <button 
                 type='button' 
@@ -105,14 +111,14 @@ export default function Home() {
               </button>
             </a>
 
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/15 transition-colors">
+            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 hover:bg-white/15 transition-colors">
               <Image 
                 src="/Maliya.jpg"
-                width={104}
-                height={104} 
+                width={130}
+                height={130} 
                 alt="Foto do album da Maliya"
               />
-              <strong>faveur - 7 Signs</strong>
+              <strong>ADDICTED</strong>
             
               <button 
                 type='button' 
@@ -122,14 +128,17 @@ export default function Home() {
               </button>
             </a>
 
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/15 transition-colors">
+            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 hover:bg-white/15 transition-colors">
               <Image 
                 src="/seori.jpg"
-                width={104}
-                height={104} 
+                width={130}
+                height={130} 
                 alt="Foto do album da Seori"
               />
-              <strong>SEORI - Dive with you</strong>
+              <strong>
+                SEORI <br/>
+                DiveWithYou
+              </strong>
             
               <button 
                 type='button' 
@@ -139,14 +148,14 @@ export default function Home() {
               </button>
             </a>
 
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/15 transition-colors">
+            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 hover:bg-white/15 transition-colors">
               <Image 
                 src="/Lo-Fi.jpg"
-                width={104}
-                height={104} 
+                width={130}
+                height={130} 
                 alt="Foto do album Lo-Fi"
               />
-              <strong>Concentration Study - Lo Fi</strong>
+              <strong>Concentration LoFi</strong>
             
               <button 
                 type='button' 
@@ -156,19 +165,118 @@ export default function Home() {
               </button>
             </a>
 
-            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/15 transition-colors">
+            <a href="#" className="bg-white/5 group rounded flex items-center gap-4 hover:bg-white/15 transition-colors">
               <Image 
-                src="/betterPlace.jpg"
-                width={104}
-                height={104} 
+                src="/springGang.jpg"
+                width={130}
+                height={130} 
                 alt="Foto do album betterPlace"
               />
-              <strong>Spring Gang - betterPlace</strong>
+              <strong>Spring Gang</strong>
             
               <button 
                 type='button' 
                 title='button' 
                 className="flex items-center p-3 rounded-full bg-green-500 text-black ml-auto mr-4 invisible group-hover:visible">
+                <Play />
+              </button>
+            </a>
+          </div>
+
+          <h2 className="font-semibold text-2xl mt-10">Made for Taynara Veloso</h2>
+
+          <div className="grid grid-cols-5 gap-3 mt-4">
+            <a href="#" className="relative bg-white/5 group rounded-md flex flex-col gap-2 hover:bg-white/10 transition-colors">
+              <Image 
+                src="/vitorKley.jpg"
+                width={130}
+                height={130} 
+                alt="Foto do album betterPlace"
+                className="w-full p-2"
+              />
+              <strong className="flex font-semibold p-3">Daily Mix 1</strong>
+              <span className="flex text-sm text-zinc-400 p-3">Playlist • YouTube Music</span>
+              <button 
+                type='button' 
+                title='button' 
+                className="absolute top-36 left-36 flex items-center p-2 rounded-full bg-green-500 text-white ml-auto invisible group-hover:visible"
+              >
+                <Play />
+              </button>
+            </a>
+
+            <a href="#" className="relative bg-white/5 group rounded-md flex flex-col gap-2 hover:bg-white/10 transition-colors">
+              <Image 
+                src="/leeYeJoon.jpg"
+                width={130}
+                height={130} 
+                alt="Foto do album betterPlace"
+                className="w-full p-2"
+              />
+              <strong className="flex font-semibold p-3">Daily Mix 1</strong>
+              <span className="flex text-sm text-zinc-400 p-3">Playlist • YouTube Music</span>
+              <button 
+                type='button' 
+                title='button' 
+                className="absolute top-36 left-36 flex items-center p-2 rounded-full bg-green-500 text-white ml-auto invisible group-hover:visible"
+              >
+                <Play />
+              </button>
+            </a>
+
+            <a href="#" className="relative bg-white/5 group rounded-md flex flex-col gap-2 hover:bg-white/10 transition-colors">
+              <Image 
+                src="/akmuMix.jpg"
+                width={130}
+                height={130} 
+                alt="Foto do album betterPlace"
+                className="w-full p-2"
+              />
+              <strong className="flex font-semibold p-3">Daily Mix 1</strong>
+              <span className="flex text-sm text-zinc-400 p-3">Playlist • YouTube Music</span>
+              <button 
+                type='button' 
+                title='button' 
+                className="absolute top-36 left-36 flex items-center p-2 rounded-full bg-green-500 text-white ml-auto invisible group-hover:visible"
+              >
+                <Play />
+              </button>
+            </a>
+
+            <a href="#" className="relative bg-white/5 group rounded-md flex flex-col gap-2 hover:bg-white/10 transition-colors">
+              <Image 
+                src="/leeMuJin.jpg"
+                width={130}
+                height={130} 
+                alt="Foto do album betterPlace"
+                className="w-full p-2"
+              />
+              <strong className="flex font-semibold p-3">Daily Mix 1</strong>
+              <span className="flex text-sm text-zinc-400 p-3">Playlist • YouTube Music</span>
+              <button 
+                type='button' 
+                title='button' 
+                className="absolute top-36 left-36 flex items-center p-2 rounded-full bg-green-500 text-white ml-auto invisible group-hover:visible"
+              >
+                <Play />
+              </button>
+            </a>
+
+            <a href="#" className="relative bg-white/5 group rounded-md flex flex-col gap-2 hover:bg-white/10 transition-colors">
+              <Image 
+                src="/punch.jpg"
+                width={130}
+                height={130} 
+                alt="Foto do album betterPlace"
+                className="w-full p-2"
+              />
+              <strong className="flex font-semibold p-3">Daily Mix 1</strong>
+              <span className="flex text-sm text-zinc-400 p-3">Playlist • YouTube Music</span>
+              <button 
+                type='button' 
+                title='button' 
+                className="absolute top-36 left-36 flex items-center p-2 rounded-full bg-green-500 text-white ml-auto invisible group-hover:visible"
+              >
                 <Play />
               </button>
             </a>
