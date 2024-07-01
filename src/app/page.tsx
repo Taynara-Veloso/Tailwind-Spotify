@@ -50,28 +50,25 @@ export default function Home() {
             </a>
           </nav>
         </aside>
-        <main className="flex-1 p-6">
-
-          <div className="justify-between">
-            <label className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-            <input type="search" id="search" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
-            <button 
-              type="submit" 
-              className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Search
+        <main className="flex-1 p-6 overflow-y-scroll">
+          <label className="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+          <input type="search" id="search" className="relative block w-full p-4 ps-10 text-sm text-gray-100 border border-gray-900 rounded-lg bg-gray-950 placeholder-gray-300 text-white" placeholder="Search" required />
+          <button 
+            type="submit" 
+            className="absolute text-white end-11 top-8 bg-pink-700 hover:bg-pink-400 focus:ring-4 focus:outline-none focus:ring-pink-500 font-medium rounded-lg text-sm px-4 py-2">
+            Search
+          </button>
+          
+          <div className="flex items-center justify-end gap-3 mt-8 pr-1">
+            <button type='button' title='button' className="rounded-full bg-black/20 p-1">
+              <ChevronLeft />
             </button>
-
-            <div className="flex items-center gap-4">
-              <button type='button' title='button' className="rounded-full bg-black/20 p-1">
-                <ChevronLeft />
-              </button>
-              <button type='button' title='button' className="rounded-full bg-black/20 p-1">
-                <ChevronRight />
-              </button>
-            </div>
+            <button type='button' title='button' className="rounded-full bg-black/20 p-1">
+              <ChevronRight />
+            </button>
           </div>
-
-          <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
+          
+          <h1 className="font-semibold text-3xl">Good Afternoon</h1>
           
           <div className="grid grid-cols-3 gap-3 mt-4">
             <a href="#" className="bg-white/5 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/15 transition-colors">
