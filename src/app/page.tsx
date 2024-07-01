@@ -170,7 +170,7 @@ export default function Home() {
                 src="/springGang.jpg"
                 width={130}
                 height={130} 
-                alt="Foto do album betterPlace"
+                alt="Foto do album Spring Gang"
               />
               <strong>Spring Gang</strong>
             
@@ -191,7 +191,7 @@ export default function Home() {
                 src="/vitorKley.jpg"
                 width={130}
                 height={130} 
-                alt="Foto do album betterPlace"
+                alt="Foto do album Vitor Kley"
                 className="w-full p-2"
               />
               <strong className="flex font-semibold p-3">Daily Mix 1</strong>
@@ -210,7 +210,7 @@ export default function Home() {
                 src="/leeYeJoon.jpg"
                 width={130}
                 height={130} 
-                alt="Foto do album betterPlace"
+                alt="Foto do album lee Ye Joon"
                 className="w-full p-2"
               />
               <strong className="flex font-semibold p-3">Daily Mix 2</strong>
@@ -229,7 +229,7 @@ export default function Home() {
                 src="/akmuMix.jpg"
                 width={130}
                 height={130} 
-                alt="Foto do album betterPlace"
+                alt="Foto do album AKMU"
                 className="w-full p-2"
               />
               <strong className="flex font-semibold p-3">Daily Mix 3</strong>
@@ -248,7 +248,7 @@ export default function Home() {
                 src="/leeMuJin.jpg"
                 width={130}
                 height={130} 
-                alt="Foto do album betterPlace"
+                alt="Foto do album lee Mu Jin"
                 className="w-full p-2"
               />
               <strong className="flex font-semibold p-3">Daily Mix 4</strong>
@@ -267,7 +267,7 @@ export default function Home() {
                 src="/punch.jpg"
                 width={130}
                 height={130} 
-                alt="Foto do album betterPlace"
+                alt="Foto do album punch"
                 className="w-full p-2"
               />
               <strong className="flex font-semibold p-3">Daily Mix 5</strong>
