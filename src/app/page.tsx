@@ -1,4 +1,4 @@
-import { Home as HomeIcons, Search, Library, ChevronLeft, ChevronRight, Play } from 'lucide-react'
+import { Home as HomeIcons, Search, Library, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat1, Mic2, LayoutList, Laptop2, Volume, Maximize2 } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -297,8 +297,39 @@ export default function Home() {
             <span className="text-xs text-zinc-400">유키카 • timeabout • 2021</span>
           </div>
         </div>
-        <div></div>
-        <div></div>
+        <div className="flex flex-col items-center gap-1">
+          <div className="flex items-center gap-6">
+            <Shuffle size={16} className="text-zinc-300" />
+            <SkipBack size={16} className="text-zinc-300"/>
+
+            <button type='button' title='button' 
+              className="w-8 h-8 flex items-center justify-center rounded-full bg-white text-black"
+            >
+              <Play size={16}/>
+            </button>
+            <SkipForward size={16} className="text-zinc-300"/>
+            <Repeat1 size={16} className="text-zinc-300"/>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-xs text-zinc-400">0:31</span>
+            <div className="h-1 rounded-full w-96 bg-zinc-600">
+              <div className="bg-zinc-200 w-40 h-1 rounded-full"></div>
+            </div>
+            <span className="text-xs text-zinc-400">2:41</span>
+          </div>
+        </div>
+        <div className="flex items-center gap-4">
+          <Mic2 size={16} className="text-zinc-300"/>
+          <LayoutList size={16} className="text-zinc-300"/>
+          <Laptop2 size={16} className="text-zinc-300"/>
+          <div className="flex items-center gap-2">
+            <Volume size={16} className="text-zinc-300"/>
+            <div className="h-1 rounded-full w-24 bg-zinc-600">
+              <div className="bg-zinc-200 w-10 h-1 rounded-full"></div>
+            </div>
+          </div>
+          <Maximize2 size={16} className="text-zinc-300"/>
+        </div>
       </footer>
     </div>
   );
